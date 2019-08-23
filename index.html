@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="Dependencies/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+
+    <title>Link Generator</title>
+</head>
+
+<body>
+    <h1 id="header">Link Generator</h1>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xl-6">
+
+                <div class="row">
+                    <div class="col-md-auto">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="flightsOnly" name="flightsOnly">
+                            <label class="custom-control-label" for="flightsOnly">Flights Only</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-auto">
+                        <div id="departureAirportContainer">
+                            <label for="departureAirport" class="lg-label">Departure Airport</label>
+                            <input type="text" name="departureAirport" id="departureAirport">
+                        </div>
+
+                        <div id="destinationAirportContainer">
+                            <label for="destinationAirport" class="lg-label">Destination Airport</label>
+                            <input type="text" name="destinationAirport" id="destinationAirport">
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <div id="affiliationContainer">
+                            <label for="affiliation" class="lg-label">Affiliation</label>
+                            <input type="text" name="affiliation" id="affiliation">
+                        </div>
+
+                        <div id="destinationCodeContainer">
+                            <label for="destinationCode" class="lg-label">Destination Code</label>
+                            <input type="text" name="destinationCode" id="destinationCode">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="datesContainer">
+                            <label for="dates" class="lg-label">Travel Dates</label>
+                            <textarea name="dates" id="dates" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <input type="button" id="generateLinks" value="Generate Links" onclick="convertDatesToLinks()"
+                            class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6">
+                <div class="row">
+                    <div class="col">
+                        <div id="linksContainer">
+                            <label for="links" class="lg-label">Generated Links</label>
+                            <textarea name="links" id="links" cols="30" rows="10" readonly></textarea>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="Dependencies/jquery-3.3.1.min.js"></script>
+        <script src="Scripts/app.js"></script>
+</body>
+
+</html>

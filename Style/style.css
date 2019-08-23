@@ -1,0 +1,36 @@
+.lg-label {
+    display: block;
+    margin-top: 25px;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+}
+
+#linksContainer {
+    display: none;
+}
+
+#generateLinks {
+    display: block;
+    margin-top: 20px;
+}
+
+#links {
+    min-height: 448px;
+}
+
+#dates {
+    max-width: 388px;
+    min-height: 246px;
+}
